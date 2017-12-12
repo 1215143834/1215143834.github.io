@@ -44,6 +44,52 @@ body {
     transform: rotateZ(-90deg);
 }
 
+/*旋转音乐按钮*/
+#mp3btn{
+    position: absolute;
+    right: 7%;
+    top: 4%;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(85, 86, 86, 0.49);
+    border: 3px solid rgba(197, 197, 197, 0.5);;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2s linear infinite;
+}
+@keyframes mp3btnkey {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+#mp3btn img{
+    width: 10px;
+}
+
+/*底部*/
+.foot{
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    z-index: 1;
+}
+.foot img{
+    position: absolute;
+    height: 70px;
+}
+.foot img:nth-of-type(1){
+    left: 0;
+}
+.foot img:nth-of-type(2){
+
+    left: -16%;
+}
 
 /* .s1*/
 
@@ -60,33 +106,37 @@ body {
     width: 35px;
     top: 120px;
     left: 50px;
-    animation: tada infinite;
+    /*animation: tada infinite 循环;*/
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
-    animation: tada infinite;
+
 }
 
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
-    animation: tada infinite;
+
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
     bottom: 210px;
-    animation: tada infinite;
+
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
     top: 25%;
     width: 60%;
     margin-left: -30%;
+}
+
+.swing{
+    transform-origin: center;
 }
 
 /*文字部分*/
@@ -125,25 +175,13 @@ body {
     margin-bottom: 12px;
     font-size: 18px;
 }
-.s1 .footer p:nth-of-type(1){
+.s1 .footer p{
     font-size: 16px;
     margin-bottom: 35px;
 }
-.s1 .footer p:nth-of-type(2){
-    height: 70px;
+.s1 .footer p{
+    height: 95px;
 }
-.s1 .footer img{
-    position: absolute;
-    height: 70px;
-}
-.s1 .footer img:nth-of-type(1){
-    left: 0;
-}
-.s1 .footer img:nth-of-type(2){
-
-    left: -12%;
-}
-
 
 /*s2*/
 .s2 {
