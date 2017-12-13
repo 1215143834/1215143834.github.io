@@ -1,4 +1,4 @@
-*{
+*,p{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -42,6 +42,15 @@ body {
     right: auto;
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
+    animation: btnnext 3s linear infinite;
+}
+@keyframes btnnext {
+    0%{
+
+    }
+    100%{
+
+    }
 }
 
 /*旋转音乐按钮*/
@@ -85,42 +94,52 @@ body {
 }
 .foot img:nth-of-type(1){
     left: 0;
+    animation: footerone 2s alternate infinite;
 }
 .foot img:nth-of-type(2){
-
     left: -16%;
+    animation: footertwo 3s alternate infinite;
+}
+@keyframes footerone {
+    0%{
+        right: -50%;
+    }
+    100%{
+        right: -100px;
+    }
+}
+@keyframes footertwo {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: -200px;
+    }
 }
 
 /* .s1*/
-
-.s1,.s2{
+.s1,.s2,.s3,.s4,.s5,.s6,.s7{
     background: url("../img/bj.png");
     height: 100%;
 }
-
 .s1 .header img{
     position: absolute;
 }
-
 .s1 .header img:nth-of-type(1){
     width: 35px;
     top: 120px;
     left: 50px;
     /*animation: tada infinite 循环;*/
 }
-
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
-
 }
-
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
-
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
@@ -134,13 +153,11 @@ body {
     width: 60%;
     margin-left: -30%;
 }
-
 .swing{
     transform-origin: center;
 }
 
-/*文字部分*/
-
+/*首页文字*/
 .s1 .main{
     position: absolute;
     top: 30%;
@@ -161,7 +178,6 @@ body {
     margin: auto;
     background-size: cover;   /*规定背景图像的尺寸：把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。背景图像的某些部分也许无法显示在背景定位区域中。*/
 }
-
 
 /*首页底部*/
 
@@ -184,58 +200,49 @@ body {
 }
 
 /*s2*/
-.s2 {
+.s2,.s3,.s4,.s5,.s6,.s7{
     color: #00f0c3;
 }
-
-.s2 h2 {
+.s2 h2,.s3 h2,.s4 h2,.s5 h2,.s6 h2,.s7 h2 {
     padding-top: 20%;
     font-size: 24px;
     margin-bottom: 7%;
 }
-
-.s2 h2::before,
-.s2 h2::after {
+.s2 h2::before,.s3 h2::before,.s4 h2::before,.s5 h2::before,.s6 h2::before,.s7 h2::before,
+.s2 h2::after,.s3 h2::after,.s4 h2::after,.s5 h2::after,.s6 h2::after,.s7 h2::after {
     content: "";
     width: 83px;
     height: 20px;
     display: inline-block;
     position: absolute;
 }
-
-.s2 h2::before {
+.s2 h2::before,.s3 h2::before,.s4 h2::before,.s5 h2::before,.s6 h2::before,.s7 h2::before {
     background: url("../img/14.png");
     background-size: cover;
     left: 45px;
     top: 82px;
 }
-
-.s2 h2::after {
+.s2 h2::after,.s3 h2::after,.s4 h2::after,.s5 h2::after,.s6 h2::after,.s7 h2::after {
     background: url("../img/13.png");
     background-size: cover;
     right: 45px;
     top: 82px;
 }
-
-.s2 h2 small {
+.s2 h2 small,.s3 h2 small,.s4 h2 small,.s5 h2 small,.s6 h2 small,.s7 h2 small {
     margin-top: 10px;
     display: block;
     font-size: 12px;
     letter-spacing: 5px;
 }
-
 .s2 div {
 
 }
-
-.s2 img {
+.s2 img ,.s4 img{
     width: 80%;
 }
-
 .s2 .main {
     position: relative;
 }
-
 .s2 .text {
     position: absolute;
     left: 0;
@@ -248,11 +255,9 @@ body {
     font-size: 14px;
     line-height: 22px;
 }
-
 .s2 .text p {
     margin-bottom: 10px;
 }
-
 .s2 span {
     position: absolute;
     bottom: -9px;
@@ -271,4 +276,120 @@ body {
     font-weight: bold;
 }
 
+/*s3*/
+.s3 .main{
+    font-weight: bold;
+}
+.s3 span{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    z-index: 10;
+    /*background: -moz-radial-gradient(white 60%,#00f0c3 30%)*/
+}
+.s3 span:nth-of-type(1){
+    top: 40%;
+    left: 33%;
+    width: 130px;
+    height: 130px;
+    font-size: 25px;
+}
+.s3 span:nth-of-type(2){
+    top: 28%;
+    left: 25%;
+    width: 60px;
+    height: 60px;
+}
+.s3 span:nth-of-type(3){
+    top: 28%;
+    right: 25%;
+    width: 60px;
+    height: 60px;
+}
+.s3 span:nth-of-type(4){
+    bottom: 45%;
+    left: 8%;
+    width: 60px;
+    height: 60px;
+}
+.s3 span:nth-of-type(5){
+    bottom: 45%;
+    right: 8%;
+    width: 60px;
+    height: 60px;
+}
+.s3 span:nth-of-type(6){
+    bottom: 29%;
+    left: 25%;
+    width: 60px;
+    height: 60px;
+}
+.s3 span:nth-of-type(7){
+    bottom: 29%;
+    right: 25%;
+    width: 60px;
+    height: 60px;
+}
+.s3 .main div{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(25, 171, 181, 0.5);
+}
+.s3 .main div:nth-of-type(1){
+    width: 207px;
+    height: 207px;
+    top: 34%;
+    left: 22%;
+}
+.s3 .main div:nth-of-type(2){
+    width: 230px;
+    height: 233px;
+    top: 32%;
+    left: 19%;
+}
+.s3 .main div:nth-of-type(3){
+    width: 255px;
+    height: 259px;
+    top: 30%;
+    left: 16%;
+}
+.s3 .main div:nth-of-type(4){
+    width: 277px;
+    height: 285px;
+    top: 28%;
+    left: 13%;
+}
+.s3 .footer{
 
+    width: 285px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 370px;
+}
+.s3 .footer p{
+    border-left: 3px solid #00f0c3;
+    padding-left: 10px;
+}
+
+/*s4*/
+.s4 .main{
+    position: relative;
+}
+.s4 ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+.s4 li{
+    margin-bottom: 20px;
+}
+.s4 li div span{
+    width: 100px;
+    height: 20px;
+    background-color: #00e6b6;
+}
