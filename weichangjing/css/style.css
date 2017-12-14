@@ -42,14 +42,16 @@ body {
     right: auto;
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
-    animation: btnnext 3s linear infinite;
+    animation: btnnext 1.7s infinite;
 }
 @keyframes btnnext {
     0%{
-        right: -100%
+        bottom: 3%;
+        opacity: 1;
     }
     100%{
-        right: 100px;
+        bottom: 5%;
+        opacity: 0;
     }
 }
 
@@ -105,7 +107,7 @@ body {
         right: 0;
     }
     100%{
-        left: -30%;
+        left: -33%;
     }
 }
 @keyframes footertwo {
@@ -237,7 +239,7 @@ body {
 .s2 div {
 
 }
-.s2 img ,.s4 img{
+.s2 img ,.s4 img,.s7 img{
     width: 80%;
 }
 .s2 .main {
@@ -285,7 +287,7 @@ body {
     border-radius: 50%;
     line-height: 60px;
     z-index: 10;
-    background: radial-gradient(circle,#000,#00E7F7)
+    background: radial-gradient(circle,#000,#00E7F7);
 }
 .s3 span:nth-of-type(1){
     top: 40%;
@@ -392,4 +394,70 @@ body {
     width: 100px;
     height: 20px;
     background-color: #00e6b6;
+}
+
+/*s5*/
+.s5 .main div{
+    background: url("../img/12.png");
+    width: 140px;
+    height: 175px;
+    background-size: 100% 100%;
+    padding: 15px 0;
+    float: left;
+}
+.s5 p{
+    font-size: 13px;
+    color: #00f0c3;
+    font-weight: bold;
+}
+.s5 span{
+    display: block;
+    width: 98px;
+    height: 22px;
+    color: #000;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left,#00e7f7, #00fc9f);
+    margin: auto;
+    margin-top: 5px;
+}
+
+/*s7*/
+.s7 .main img{
+    position: relative;
+
+}
+.s7 .main div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    width: 80%;
+    margin: auto;
+}
+.s7 input{
+    width: 260px;
+    height: 52px;
+    margin-bottom: 10px;
+    border: 1px solid #00f0c3;
+}
+.s7 button{
+    margin-top: 10px;
+    background: #00f0c3;
+    border: 0;
+}
+.s7 button a{
+    color: #fff;
+    text-align: center;
+    padding: 17px 116px;
+    display: block;
+    text-decoration: none;
+}
+.s7 .main p{
+    font-size: 16px;
+    width: 260px;
+    margin: auto;
+    margin-top: 20px;
 }
