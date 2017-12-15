@@ -289,7 +289,7 @@ body {
     border-radius: 50%;
     line-height: 60px;
     z-index: 10;
-    background: radial-gradient(circle,rgba(16, 16, 16, 0.05),rgba(0, 231, 247, 0.49));
+    background: radial-gradient(circle,rgba(16, 16, 16, 0.05),rgba(0, 231, 247, 0.49));   /*radial:径向的*/
 }
 .s3 span:nth-of-type(1){
     top: 40%;
@@ -400,6 +400,10 @@ body {
 .s4 li span:nth-of-type(2){
     color: #00bffd;
     line-height: 0px;
+    margin-left: 5px;
+}
+.s4 li span:nth-of-type(1){
+    margin-left: 5px;
 }
 .s4 li:nth-of-type(1) span:nth-of-type(2){
     margin-left: 20px;
@@ -416,24 +420,34 @@ body {
     display: inline-block;
 }
 .s4 li:nth-of-type(2) div:nth-of-type(1){
-    width: 230px;
-    background-color: #26f9b2;
+    width: 225px;
+    background: linear-gradient(to left, #26f9b2, #000525);   /*linear:线性的*/
 }
 .s4 li:nth-of-type(2) div:nth-of-type(2){
-    width: 130px;
-    background-color: #00bffd;
+    width: 125px;
+    background: linear-gradient(to left, #00bffd, #000525);
     margin-left: -88px;
 }
 .s4 li:nth-of-type(3) div:nth-of-type(1){
-    width: 180px;
-    background-color: #26f9b2;
-    margin-left: -70px;
+    width: 175px;
+    background: linear-gradient(to left, #26f9b2, #000525);
+    margin-left: -37px;
 }
 .s4 li:nth-of-type(3) div:nth-of-type(2){
-    width: 180px;
-    background-color: #00bffd;
+    width: 105px;
+    background: linear-gradient(to left, #00bffd, #000525);
+    margin-left: -108px;
 }
-
+.s4 li:nth-of-type(4) div:nth-of-type(1){
+    width: 130px;
+    background: linear-gradient(to left, #26f9b2, #000525);
+    margin-left: -90px;
+}
+.s4 li:nth-of-type(4) div:nth-of-type(2){
+    width: 65px;
+    background: linear-gradient(to left, #00bffd, #000525);
+    margin-left: -163px;
+}
 .s4 li:last-of-type {
     font-size: 14px;
     width: 92%;
@@ -468,6 +482,50 @@ body {
     background: -webkit-linear-gradient(left,#00e7f7, #00fc9f);
     margin: auto;
     margin-top: 5px;
+}
+
+/*s6*/
+.s6 .main{
+    width: 80%;
+    margin: auto;
+    border-left: 1.5px dashed #00fc9f;
+}
+.s6 .main img{
+    position: absolute;
+    left: 26px;
+}
+.s6 .main img:nth-of-type(2){
+    top: 294px;
+}
+.s6 .main img:nth-of-type(3){
+    top: 432px;
+}
+.s6 .main span{
+    display: block;
+    background: url("../img/s6btn2.png");
+    width: 250px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 23px;
+    margin-left: 18px;
+    text-align: left;
+    padding-left: 15px;
+}
+.s6 .main div{
+    width: 270px;
+    height: 85px;
+    margin-left: 18px;
+    border: 1px solid #024454;
+    background: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 230, 182, 0.25));
+    border-radius: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.s6 .main div p{
+    text-align: left;
 }
 
 /*s7*/
