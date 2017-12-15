@@ -183,7 +183,6 @@ body {
 }
 
 /*首页底部*/
-
 .s1 .footer{
     position: absolute;
     bottom: 0;
@@ -224,12 +223,30 @@ body {
     background-size: cover;
     left: 45px;
     top: 82px;
+    animation: leftone 1s alternate infinite;
+}
+@keyframes leftone {
+    0%{
+        right: 5px;
+    }
+    100%{
+        left: 40px;
+    }
 }
 .s2 h2::after,.s3 h2::after,.s4 h2::after,.s5 h2::after,.s6 h2::after,.s7 h2::after {
     background: url("../img/13.png");
     background-size: cover;
     right: 45px;
     top: 82px;
+    animation: rightone 1s alternate infinite;
+}
+@keyframes rightone {
+    0%{
+        right: 45px;
+    }
+    100%{
+        right: 40px;
+    }
 }
 .s2 h2 small,.s3 h2 small,.s4 h2 small,.s5 h2 small,.s6 h2 small,.s7 h2 small {
     margin-top: 10px;
@@ -290,6 +307,7 @@ body {
     line-height: 60px;
     z-index: 10;
     background: radial-gradient(circle,rgba(16, 16, 16, 0.05),rgba(0, 231, 247, 0.49));   /*radial:径向的*/
+    animation: rubberBand infinite 2s 2s;
 }
 .s3 span:nth-of-type(1){
     top: 40%;
@@ -298,6 +316,7 @@ body {
     height: 130px;
     font-size: 25px;
     line-height: 130px;
+    animation: pulse infinite 2s 2s;
 }
 .s3 span:nth-of-type(2){
     top: 28%;
